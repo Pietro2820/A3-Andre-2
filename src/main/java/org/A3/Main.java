@@ -1,3 +1,6 @@
+package org.A3;
+
+import org.A3.Limpador;
 import org.A3.PastaCursos.Conteudo;
 import org.A3.PastaCursos.Curso;
 import org.A3.PastaCursos.Material;
