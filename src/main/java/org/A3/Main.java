@@ -80,137 +80,237 @@ public class Main {
         // Redação ==================================
 
         ArrayList<Material> materiaisRedacao = new ArrayList<>();
-        materiaisRedacao.add(new Material(" Estrutura da Redação Dissertativo-Argumentativa", new ArrayList<>(Arrays.asList(
-                new Conteudo(" Introdução: apresentação do tema e tese"),
-                new Conteudo(" Desenvolvimento: argumentos e contra-argumentos"),
-                new Conteudo(" Conclusão: proposta de intervenção")
+        materiaisRedacao.add(new Material("Estrutura da Redação Dissertativo-Argumentativa", new ArrayList<>(Arrays.asList(
+                new Conteudo("Introdução: apresentação do tema e tese", new ArrayList<>(),
+                        new Explicacao("introducao apresentacao do tema e tese", "C:\\Users\\cardo\\Desktop\\materiais\\redacao\\introducao apresentacao do tema e tese.txt")),
+                new Conteudo("Desenvolvimento: argumentos e contra-argumentos", new ArrayList<>(),
+                        new Explicacao("desenvolvimento argumentos e contra-argumentos", "C:\\Users\\cardo\\Desktop\\materiais\\redacao\\desenvolvimento argumentos e contra-argumentos.txt")),
+                new Conteudo("Conclusão: proposta de intervenção", new ArrayList<>(),
+                        new Explicacao("conclusao proposta de intervencao", "C:\\Users\\cardo\\Desktop\\materiais\\redacao\\conclusao proposta de intervencao.txt"))
         ))));
-        materiaisRedacao.add(new Material(" Competências Avaliadas no ENEM", new ArrayList<>(Arrays.asList(
-                new Conteudo(" Domínio da norma padrão da língua escrita"),
-                new Conteudo(" Compreensão da proposta e aplicação dos conhecimentos"),
-                new Conteudo(" Seleção e organização de argumentos"),
-                new Conteudo(" Coesão e coerência textual"),
-                new Conteudo(" Proposta de intervenção respeitando os direitos humanos")
+
+        materiaisRedacao.add(new Material("Competências Avaliadas no ENEM", new ArrayList<>(Arrays.asList(
+                new Conteudo("Domínio da norma padrão da língua escrita", new ArrayList<>(),
+                        new Explicacao("dominio da norma padrao da lingua escrita", "C:\\Users\\cardo\\Desktop\\materiais\\redacao\\dominio da norma padrao da lingua escrita.txt")),
+                new Conteudo("Compreensão da proposta e aplicação dos conhecimentos", new ArrayList<>(),
+                        new Explicacao("compreensao da proposta e aplicacao dos conhecimentos", "C:\\Users\\cardo\\Desktop\\materiais\\redacao\\compreensao da proposta e aplicacao dos conhecimentos.txt")),
+                new Conteudo("Seleção e organização de argumentos", new ArrayList<>(),
+                        new Explicacao("selecao e organizacao de argumentos", "C:\\Users\\cardo\\Desktop\\materiais\\redacao\\selecao e organizacao de argumentos.txt")),
+                new Conteudo("Coesão e coerência textual", new ArrayList<>(),
+                        new Explicacao("coesao e coerencia textual", "C:\\Users\\cardo\\Desktop\\materiais\\redacao\\coesao e coerencia textual.txt")),
+                new Conteudo("Proposta de intervenção respeitando os direitos humanos", new ArrayList<>(),
+                        new Explicacao("proposta de intervencao respeitando os direitos humanos", "C:\\Users\\cardo\\Desktop\\materiais\\redacao\\proposta de intervencao respeitando os direitos humanos.txt"))
         ))));
-        materiaisRedacao.add(new Material(" Tipos de Argumentação", new ArrayList<>(Arrays.asList(
-                new Conteudo(" Argumento de autoridade"),
-                new Conteudo(" Argumento por exemplificação"),
-                new Conteudo(" Argumento lógico"),
-                new Conteudo(" Comparação e analogia")
+
+        materiaisRedacao.add(new Material("Tipos de Argumentação", new ArrayList<>(Arrays.asList(
+                new Conteudo("Argumento de autoridade", new ArrayList<>(),
+                        new Explicacao("argumento de autoridade", "C:\\Users\\cardo\\Desktop\\materiais\\redacao\\argumento de autoridade.txt")),
+                new Conteudo("Argumento por exemplificação", new ArrayList<>(),
+                        new Explicacao("argumento por exemplificacao", "C:\\Users\\cardo\\Desktop\\materiais\\redacao\\argumento por exemplificacao.txt")),
+                new Conteudo("Argumento lógico", new ArrayList<>(),
+                        new Explicacao("argumento logico", "C:\\Users\\cardo\\Desktop\\materiais\\redacao\\argumento logico.txt")),
+                new Conteudo("Comparação e analogia", new ArrayList<>(),
+                        new Explicacao("comparacao e analogia", "C:\\Users\\cardo\\Desktop\\materiais\\redacao\\comparacao e analogia.txt"))
         ))));
-        materiaisRedacao.add(new Material(" Proposta de Intervenção", new ArrayList<>(Arrays.asList(
-                new Conteudo(" Ação"),
-                new Conteudo(" Agente"),
-                new Conteudo(" Modo de execução"),
-                new Conteudo(" Efeito esperado"),
-                new Conteudo(" Detalhamento e viabilidade")
+
+        materiaisRedacao.add(new Material("Proposta de Intervenção", new ArrayList<>(Arrays.asList(
+                new Conteudo("Ação", new ArrayList<>(),
+                        new Explicacao("acao", "C:\\Users\\cardo\\Desktop\\materiais\\redacao\\acao.txt")),
+                new Conteudo("Agente", new ArrayList<>(),
+                        new Explicacao("agente", "C:\\Users\\cardo\\Desktop\\materiais\\redacao\\agente.txt")),
+                new Conteudo("Modo de execução", new ArrayList<>(),
+                        new Explicacao("modo de execucao", "C:\\Users\\cardo\\Desktop\\materiais\\redacao\\modo de execucao.txt")),
+                new Conteudo("Efeito esperado", new ArrayList<>(),
+                        new Explicacao("efeito esperado", "C:\\Users\\cardo\\Desktop\\materiais\\redacao\\efeito esperado.txt")),
+                new Conteudo("Detalhamento e viabilidade", new ArrayList<>(),
+                        new Explicacao("detalhamento e viabilidade", "C:\\Users\\cardo\\Desktop\\materiais\\redacao\\detalhamento e viabilidade.txt"))
         ))));
-        materiaisRedacao.add(new Material(" Dicas para Redação Nota 1000", new ArrayList<>(Arrays.asList(
-                new Conteudo(" Planejamento antes de escrever"),
-                new Conteudo(" Evitar clichês e frases prontas"),
-                new Conteudo(" Cuidar da progressão textual"),
-                new Conteudo(" Revisar o texto final")
+
+        materiaisRedacao.add(new Material("Dicas para Redação Nota 1000", new ArrayList<>(Arrays.asList(
+                new Conteudo("Planejamento antes de escrever", new ArrayList<>(),
+                        new Explicacao("planejamento antes de escrever", "C:\\Users\\cardo\\Desktop\\materiais\\redacao\\planejamento antes de escrever.txt")),
+                new Conteudo("Evitar clichês e frases prontas", new ArrayList<>(),
+                        new Explicacao("evitar cliches e frases prontas", "C:\\Users\\cardo\\Desktop\\materiais\\redacao\\evitar cliches e frases prontas.txt")),
+                new Conteudo("Cuidar da progressão textual", new ArrayList<>(),
+                        new Explicacao("cuidar da progressao textual", "C:\\Users\\cardo\\Desktop\\materiais\\redacao\\cuidar da progressao textual.txt")),
+                new Conteudo("Revisar o texto final", new ArrayList<>(),
+                        new Explicacao("revisar o texto final", "C:\\Users\\cardo\\Desktop\\materiais\\redacao\\revisar o texto final.txt"))
         ))));
+
 
 
         // Matemática ===============================================================
+
         ArrayList<Material> materiaisMatematica = new ArrayList<>();
-        materiaisMatematica.add(new Material(" Aritmética", new ArrayList<>(Arrays.asList(
-                new Conteudo(" operações"),
-                new Conteudo(" porcentagem"),
-                new Conteudo(" razão"),
-                new Conteudo(" proporção")
+        materiaisMatematica.add(new Material("Aritmética", new ArrayList<>(Arrays.asList(
+                new Conteudo("operações", new ArrayList<>(),
+                        new Explicacao("operacoes", "C:\\Users\\cardo\\Desktop\\materiais\\matematica\\operacoes.txt")),
+                new Conteudo("porcentagem", new ArrayList<>(),
+                        new Explicacao("porcentagem", "C:\\Users\\cardo\\Desktop\\materiais\\matematica\\porcentagem.txt")),
+                new Conteudo("razão", new ArrayList<>(),
+                        new Explicacao("razao", "C:\\Users\\cardo\\Desktop\\materiais\\matematica\\razao.txt")),
+                new Conteudo("proporção", new ArrayList<>(),
+                        new Explicacao("proporcao", "C:\\Users\\cardo\\Desktop\\materiais\\matematica\\proporcao.txt"))
         ))));
-        materiaisMatematica.add(new Material(" Álgebra", new ArrayList<>(Arrays.asList(
-                new Conteudo(" equações do 1º"),
-                new Conteudo(" equações do 2º"),
-                new Conteudo(" inequações"),
-                new Conteudo(" sistemas lineares")
+
+        materiaisMatematica.add(new Material("Álgebra", new ArrayList<>(Arrays.asList(
+                new Conteudo("equações do 1º", new ArrayList<>(),
+                        new Explicacao("equacoes do 1", "C:\\Users\\cardo\\Desktop\\materiais\\matematica\\equacoes do 1.txt")),
+                new Conteudo("equações do 2º", new ArrayList<>(),
+                        new Explicacao("equacoes do 2", "C:\\Users\\cardo\\Desktop\\materiais\\matematica\\equacoes do 2.txt")),
+                new Conteudo("inequações", new ArrayList<>(),
+                        new Explicacao("inequacoes", "C:\\Users\\cardo\\Desktop\\materiais\\matematica\\inequacoes.txt")),
+                new Conteudo("sistemas lineares", new ArrayList<>(),
+                        new Explicacao("sistemas lineares", "C:\\Users\\cardo\\Desktop\\materiais\\matematica\\sistemas lineares.txt"))
         ))));
-        materiaisMatematica.add(new Material(" Funções", new ArrayList<>(Arrays.asList(
-                new Conteudo(" afim"),
-                new Conteudo(" quadrática"),
-                new Conteudo(" exponencial"),
-                new Conteudo(" logarítmica")
+
+        materiaisMatematica.add(new Material("Funções", new ArrayList<>(Arrays.asList(
+                new Conteudo("afim", new ArrayList<>(),
+                        new Explicacao("afim", "C:\\Users\\cardo\\Desktop\\materiais\\matematica\\afim.txt")),
+                new Conteudo("quadrática", new ArrayList<>(),
+                        new Explicacao("quadratica", "C:\\Users\\cardo\\Desktop\\materiais\\matematica\\quadratica.txt")),
+                new Conteudo("exponencial", new ArrayList<>(),
+                        new Explicacao("exponencial", "C:\\Users\\cardo\\Desktop\\materiais\\matematica\\exponencial.txt")),
+                new Conteudo("logarítmica", new ArrayList<>(),
+                        new Explicacao("logaritmica", "C:\\Users\\cardo\\Desktop\\materiais\\matematica\\logaritmica.txt"))
         ))));
-        materiaisMatematica.add(new Material(" Geometria", new ArrayList<>(Arrays.asList(
-                new Conteudo(" plana"),
-                new Conteudo(" espacial"),
-                new Conteudo(" analítica")
+
+        materiaisMatematica.add(new Material("Geometria", new ArrayList<>(Arrays.asList(
+                new Conteudo("plana", new ArrayList<>(),
+                        new Explicacao("plana", "C:\\Users\\cardo\\Desktop\\materiais\\matematica\\plana.txt")),
+                new Conteudo("espacial", new ArrayList<>(),
+                        new Explicacao("espacial", "C:\\Users\\cardo\\Desktop\\materiais\\matematica\\espacial.txt")),
+                new Conteudo("analítica", new ArrayList<>(),
+                        new Explicacao("analitica", "C:\\Users\\cardo\\Desktop\\materiais\\matematica\\analitica.txt"))
         ))));
-        materiaisMatematica.add(new Material(" Trigonometria básica", new ArrayList<>(Arrays.asList(
-                new Conteudo(" oi"),
-                new Conteudo(" oi")
+
+        materiaisMatematica.add(new Material("Trigonometria básica", new ArrayList<>(Arrays.asList(
+                new Conteudo("oi", new ArrayList<>(),
+                        new Explicacao("oi", "C:\\Users\\cardo\\Desktop\\materiais\\matematica\\trigonometria basica.txt")),
+                new Conteudo("oi", new ArrayList<>(),
+                        new Explicacao("oi", "C:\\Users\\cardo\\Desktop\\materiais\\matematica\\oi.txt"))
         ))));
-        materiaisMatematica.add(new Material(" Estatística e probabilidade", new ArrayList<>(Arrays.asList(
-                new Conteudo(" média"),
-                new Conteudo(" mediana"),
-                new Conteudo(" moda"),
-                new Conteudo(" gráficos"),
-                new Conteudo(" tabelas")
+
+        materiaisMatematica.add(new Material("Estatística e probabilidade", new ArrayList<>(Arrays.asList(
+                new Conteudo("média", new ArrayList<>(),
+                        new Explicacao("media", "C:\\Users\\cardo\\Desktop\\materiais\\matematica\\media.txt")),
+                new Conteudo("mediana", new ArrayList<>(),
+                        new Explicacao("mediana", "C:\\Users\\cardo\\Desktop\\materiais\\matematica\\mediana.txt")),
+                new Conteudo("moda", new ArrayList<>(),
+                        new Explicacao("moda", "C:\\Users\\cardo\\Desktop\\materiais\\matematica\\moda.txt")),
+                new Conteudo("gráficos", new ArrayList<>(),
+                        new Explicacao("graficos", "C:\\Users\\cardo\\Desktop\\materiais\\matematica\\graficos.txt")),
+                new Conteudo("tabelas", new ArrayList<>(),
+                        new Explicacao("tabelas", "C:\\Users\\cardo\\Desktop\\materiais\\matematica\\tabelas.txt"))
         ))));
-        materiaisMatematica.add(new Material(" Problemas envolvendo raciocínio lógico e interpretação", new ArrayList<>(Arrays.asList(
-                new Conteudo(" oi"),
-                new Conteudo(" oi")
+
+        materiaisMatematica.add(new Material("Problemas envolvendo raciocínio lógico e interpretação", new ArrayList<>(Arrays.asList(
+                new Conteudo("oi", new ArrayList<>(),
+                        new Explicacao("oi", "C:\\Users\\cardo\\Desktop\\materiais\\matematica\\oi.txt")),
+                new Conteudo("oi", new ArrayList<>(),
+                        new Explicacao("oi", "C:\\Users\\cardo\\Desktop\\materiais\\matematica\\oi.txt"))
         ))));
+
 
         // Humanas =====================================================================================
 
         ArrayList<Material> materiaisHumanas = new ArrayList<>();
-        materiaisHumanas.add(new Material(" História do Brasil", new ArrayList<>(Arrays.asList(
-                new Conteudo(" Brasil Colônia"),
-                new Conteudo(" Brasil Império"),
-                new Conteudo(" Brasil República")
+        materiaisHumanas.add(new Material("História do Brasil", new ArrayList<>(Arrays.asList(
+                new Conteudo("Brasil Colônia", new ArrayList<>(),
+                        new Explicacao("brasil colonia", "C:\\Users\\cardo\\Desktop\\materiais\\humanas\\brasil colonia.txt")),
+                new Conteudo("Brasil Império", new ArrayList<>(),
+                        new Explicacao("brasil imperio", "C:\\Users\\cardo\\Desktop\\materiais\\humanas\\brasil imperio.txt")),
+                new Conteudo("Brasil República", new ArrayList<>(),
+                        new Explicacao("brasil republica", "C:\\Users\\cardo\\Desktop\\materiais\\humanas\\brasil republica.txt"))
         ))));
-        materiaisHumanas.add(new Material(" Ditadura Militar e Redemocratização", new ArrayList<>(Arrays.asList(
-                new Conteudo(" Golpe de 1964"),
-                new Conteudo(" Regime Militar"),
-                new Conteudo(" Processo de redemocratização")
+
+        materiaisHumanas.add(new Material("Ditadura Militar e Redemocratização", new ArrayList<>(Arrays.asList(
+                new Conteudo("Golpe de 1964", new ArrayList<>(),
+                        new Explicacao("golpe de 1964", "C:\\Users\\cardo\\Desktop\\materiais\\humanas\\golpe de 1964.txt")),
+                new Conteudo("Regime Militar", new ArrayList<>(),
+                        new Explicacao("regime militar", "C:\\Users\\cardo\\Desktop\\materiais\\humanas\\regime militar.txt")),
+                new Conteudo("Processo de redemocratização", new ArrayList<>(),
+                        new Explicacao("processo de redemocratizacao", "C:\\Users\\cardo\\Desktop\\materiais\\humanas\\processo de redemocratizacao.txt"))
         ))));
-        materiaisHumanas.add(new Material(" História Geral", new ArrayList<>(Arrays.asList(
-                new Conteudo(" Antiguidade"),
-                new Conteudo(" Idade Média"),
-                new Conteudo(" Idade Moderna"),
-                new Conteudo(" Idade Contemporânea")
+
+        materiaisHumanas.add(new Material("História Geral", new ArrayList<>(Arrays.asList(
+                new Conteudo("Antiguidade", new ArrayList<>(),
+                        new Explicacao("antiguidade", "C:\\Users\\cardo\\Desktop\\materiais\\humanas\\antiguidade.txt")),
+                new Conteudo("Idade Média", new ArrayList<>(),
+                        new Explicacao("idade media", "C:\\Users\\cardo\\Desktop\\materiais\\humanas\\idade media.txt")),
+                new Conteudo("Idade Moderna", new ArrayList<>(),
+                        new Explicacao("idade moderna", "C:\\Users\\cardo\\Desktop\\materiais\\humanas\\idade moderna.txt")),
+                new Conteudo("Idade Contemporânea", new ArrayList<>(),
+                        new Explicacao("idade contemporanea", "C:\\Users\\cardo\\Desktop\\materiais\\humanas\\idade contemporanea.txt"))
         ))));
-        materiaisHumanas.add(new Material(" Revoluções", new ArrayList<>(Arrays.asList(
-                new Conteudo(" Revoluções Industriais"),
-                new Conteudo(" Revoluções Francesa, Russa e outras")
+
+        materiaisHumanas.add(new Material("Revoluções", new ArrayList<>(Arrays.asList(
+                new Conteudo("Revoluções Industriais", new ArrayList<>(),
+                        new Explicacao("revolucoes industriais", "C:\\Users\\cardo\\Desktop\\materiais\\humanas\\revolucoes industriais.txt")),
+                new Conteudo("Revoluções Francesa, Russa e outras", new ArrayList<>(),
+                        new Explicacao("revolucoes francesa russa e outras", "C:\\Users\\cardo\\Desktop\\materiais\\humanas\\revolucoes francesa russa e outras.txt"))
         ))));
-        materiaisHumanas.add(new Material(" Movimentos Sociais", new ArrayList<>(Arrays.asList(
-                new Conteudo(" Movimentos por direitos civis"),
-                new Conteudo(" Movimentos operários"),
-                new Conteudo(" Movimentos estudantis"),
-                new Conteudo(" Movimentos sociais no Brasil")
+
+        materiaisHumanas.add(new Material("Movimentos Sociais", new ArrayList<>(Arrays.asList(
+                new Conteudo("Movimentos por direitos civis", new ArrayList<>(),
+                        new Explicacao("movimentos por direitos civis", "C:\\Users\\cardo\\Desktop\\materiais\\humanas\\movimentos por direitos civis.txt")),
+                new Conteudo("Movimentos operários", new ArrayList<>(),
+                        new Explicacao("movimentos operarios", "C:\\Users\\cardo\\Desktop\\materiais\\humanas\\movimentos operarios.txt")),
+                new Conteudo("Movimentos estudantis", new ArrayList<>(),
+                        new Explicacao("movimentos estudantis", "C:\\Users\\cardo\\Desktop\\materiais\\humanas\\movimentos estudantis.txt")),
+                new Conteudo("Movimentos sociais no Brasil", new ArrayList<>(),
+                        new Explicacao("movimentos sociais no brasil", "C:\\Users\\cardo\\Desktop\\materiais\\humanas\\movimentos sociais no brasil.txt"))
         ))));
+
 
         // Ciências da Natureza ========================================================================
 
         ArrayList<Material> materiaisCienciasNatureza = new ArrayList<>();
-        materiaisCienciasNatureza.add(new Material(" Física", new ArrayList<>(Arrays.asList(
-                new Conteudo(" Cinemática"),
-                new Conteudo(" Dinâmica"),
-                new Conteudo(" Trabalho e Energia"),
-                new Conteudo(" Termodinâmica"),
-                new Conteudo(" Óptica"),
-                new Conteudo(" Eletricidade e Magnetismo")
+        materiaisCienciasNatureza.add(new Material("Física", new ArrayList<>(Arrays.asList(
+                new Conteudo("Cinemática", new ArrayList<>(),
+                        new Explicacao("cinematica", "C:\\Users\\cardo\\Desktop\\materiais\\ciencias da natureza\\cinematica.txt")),
+                new Conteudo("Dinâmica", new ArrayList<>(),
+                        new Explicacao("dinamica", "C:\\Users\\cardo\\Desktop\\materiais\\ciencias da natureza\\dinamica.txt")),
+                new Conteudo("Trabalho e Energia", new ArrayList<>(),
+                        new Explicacao("trabalho e energia", "C:\\Users\\cardo\\Desktop\\materiais\\ciencias da natureza\\trabalho e energia.txt")),
+                new Conteudo("Termodinâmica", new ArrayList<>(),
+                        new Explicacao("termodinamica", "C:\\Users\\cardo\\Desktop\\materiais\\ciencias da natureza\\termodinamica.txt")),
+                new Conteudo("Óptica", new ArrayList<>(),
+                        new Explicacao("optica", "C:\\Users\\cardo\\Desktop\\materiais\\ciencias da natureza\\optica.txt")),
+                new Conteudo("Eletricidade e Magnetismo", new ArrayList<>(),
+                        new Explicacao("eletricidade e magnetismo", "C:\\Users\\cardo\\Desktop\\materiais\\ciencias da natureza\\eletricidade e magnetismo.txt"))
         ))));
-        materiaisCienciasNatureza.add(new Material(" Química", new ArrayList<>(Arrays.asList(
-                new Conteudo(" Química Geral: Átomos, Moléculas e Reações"),
-                new Conteudo(" Química Orgânica: Funções e Reações Orgânicas"),
-                new Conteudo(" Química Inorgânica: Ligações e Propriedades"),
-                new Conteudo(" Soluções e Equilíbrios Químicos"),
-                new Conteudo(" Termoquímica"),
-                new Conteudo(" Radioatividade")
+
+        materiaisCienciasNatureza.add(new Material("Química", new ArrayList<>(Arrays.asList(
+                new Conteudo("Química Geral: Átomos, Moléculas e Reações", new ArrayList<>(),
+                        new Explicacao("quimica geral atomos moleculas e reacoes", "C:\\Users\\cardo\\Desktop\\materiais\\ciencias da natureza\\quimica geral atomos moleculas e reacoes.txt")),
+                new Conteudo("Química Orgânica: Funções e Reações Orgânicas", new ArrayList<>(),
+                        new Explicacao("quimica organica funcoes e reacoes organicas", "C:\\Users\\cardo\\Desktop\\materiais\\ciencias da natureza\\quimica organica funcoes e reacoes organicas.txt")),
+                new Conteudo("Química Inorgânica: Ligações e Propriedades", new ArrayList<>(),
+                        new Explicacao("quimica inorganica ligacoes e propriedades", "C:\\Users\\cardo\\Desktop\\materiais\\ciencias da natureza\\quimica inorganica ligacoes e propriedades.txt")),
+                new Conteudo("Soluções e Equilíbrios Químicos", new ArrayList<>(),
+                        new Explicacao("solucoes e equilíbrios quimicos", "C:\\Users\\cardo\\Desktop\\materiais\\ciencias da natureza\\solucoes e equilíbrios quimicos.txt")),
+                new Conteudo("Termoquímica", new ArrayList<>(),
+                        new Explicacao("termoquimica", "C:\\Users\\cardo\\Desktop\\materiais\\ciencias da natureza\\termoquimica.txt")),
+                new Conteudo("Radioatividade", new ArrayList<>(),
+                        new Explicacao("radioatividade", "C:\\Users\\cardo\\Desktop\\materiais\\ciencias da natureza\\radioatividade.txt"))
         ))));
-        materiaisCienciasNatureza.add(new Material(" Biologia", new ArrayList<>(Arrays.asList(
-                new Conteudo(" Citologia e Histologia"),
-                new Conteudo(" Genética"),
-                new Conteudo(" Evolução"),
-                new Conteudo(" Ecologia e Meio Ambiente"),
-                new Conteudo(" Fisiologia Humana"),
-                new Conteudo(" Botânica e Zoologia")
+
+        materiaisCienciasNatureza.add(new Material("Biologia", new ArrayList<>(Arrays.asList(
+                new Conteudo("Citologia e Histologia", new ArrayList<>(),
+                        new Explicacao("citologia e histologia", "C:\\Users\\cardo\\Desktop\\materiais\\ciencias da natureza\\citologia e histologia.txt")),
+                new Conteudo("Genética", new ArrayList<>(),
+                        new Explicacao("genetica", "C:\\Users\\cardo\\Desktop\\materiais\\ciencias da natureza\\genetica.txt")),
+                new Conteudo("Evolução", new ArrayList<>(),
+                        new Explicacao("evolucao", "C:\\Users\\cardo\\Desktop\\materiais\\ciencias da natureza\\evolucao.txt")),
+                new Conteudo("Ecologia e Meio Ambiente", new ArrayList<>(),
+                        new Explicacao("ecologia e meio ambiente", "C:\\Users\\cardo\\Desktop\\materiais\\ciencias da natureza\\ecologia e meio ambiente.txt")),
+                new Conteudo("Fisiologia Humana", new ArrayList<>(),
+                        new Explicacao("fisiologia humana", "C:\\Users\\cardo\\Desktop\\materiais\\ciencias da natureza\\fisiologia humana.txt")),
+                new Conteudo("Botânica e Zoologia", new ArrayList<>(),
+                        new Explicacao("botanica e zoologia", "C:\\Users\\cardo\\Desktop\\materiais\\ciencias da natureza\\botanica e zoologia.txt"))
         ))));
+
 
         // Adicionando na Classe
         curso.add(new Curso(" Português", materiaisPortugues));
