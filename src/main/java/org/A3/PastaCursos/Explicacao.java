@@ -1,38 +1,52 @@
 package org.A3.PastaCursos;
-import java.util.Scanner;
-import java.io.File;
+
+import java.awt.*;
+import java.io.*;
 
 public class Explicacao {
     private String nome;
-    private File arquivo;
+    private String caminhoDoArquivo;
 
     public Explicacao(String nome, String caminhoDoArquivo) {
         this.nome = nome;
-        this.arquivo = new File(caminhoDoArquivo);
+        this.caminhoDoArquivo = caminhoDoArquivo;
     }
 
     public String getNome() {
         return nome;
     }
 
-    public File getArquivo() {
-        return arquivo;
+    public String getCaminhoDoArquivo() {
+        return caminhoDoArquivo;
     }
 
-    public String lerExplicacao() {
-        StringBuilder conteudo = new StringBuilder();
-        try (Scanner entrada = new Scanner(arquivo)) {
-            while (entrada.hasNextLine()) {
-                conteudo.append(entrada.nextLine()).append("\n");
-            }
-        } catch (Exception e) {
-            return "Erro ao ler explicação: " + e.getMessage();
+    public void abrirArquivo() {
+        File arquivo = new File(this.caminhoDoArquivo);
+
+        if (!arquivo.exists()) {
+            System.out.println("Arquivo não encontrado: " + caminhoDoArquivo);
+            return;
         }
-        return conteudo.toString();
-    }
 
-    @Override
-    public String toString() {
-        return "Explicação: " + nome + "\nArquivo: " + arquivo.getPath();
+        if (!Desktop.isDesktopSupported()) {
+            System.out.println("Abertura de arquivos não é suportada neste sistema.");
+            return;
+        }
+
+        try {
+            Desktop.getDesktop().open(arquivo);
+            System.out.println("Arquivo aberto com sucesso.");
+        } catch (IOException e) {
+            if (caminhoDoArquivo.toLowerCase().endsWith(".txt")) {
+                try {
+                    Runtime.getRuntime().exec("notepad.exe \"" + caminhoDoArquivo + "\"");
+                    System.out.println("Arquivo aberto com o Bloco de Notas.");
+                } catch (IOException ex) {
+                    System.out.println("Erro ao abrir com o Notepad: " + ex.getMessage());
+                }
+            } else {
+                System.out.println("Erro ao abrir o arquivo: " + e.getMessage());
+            }
+        }
     }
 }

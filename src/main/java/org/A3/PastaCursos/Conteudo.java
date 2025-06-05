@@ -51,7 +51,7 @@ public class Conteudo {
 
     public void mostrarExplicacaoArquivo() {
         if (explicacao != null) {
-            System.out.println(explicacao.lerExplicacao());
+            explicacao.abrirArquivo();  // chama abrir() — já imprime as mensagens dentro do método abrir()
         } else {
             System.out.println("Nenhuma explicação de arquivo associada.");
         }

@@ -1,52 +1,81 @@
 package org.A3;
 
-import org.A3.Limpador;
-import org.A3.PastaCursos.Conteudo;
-import org.A3.PastaCursos.Curso;
-import org.A3.PastaCursos.Material;
-
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
+import org.A3.PastaCursos.Conteudo;
+import org.A3.PastaCursos.Curso;
+import org.A3.PastaCursos.Explicacao;
+import org.A3.PastaCursos.Material;
+
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         Limpador limpador = new Limpador();
         ArrayList<Curso> curso = new ArrayList<>();
         Scanner entrada = new Scanner(System.in);
 
+
         // Português =====================================================================
         ArrayList<Material> materiaisPortugues = new ArrayList<>();
-        materiaisPortugues.add(new Material(" Interpretação de textos", new ArrayList<>(Arrays.asList(
-                new Conteudo(" Compreensão e inferência"),
-                new Conteudo(" Intenção comunicativa"),
-                new Conteudo(" Análise de discurso"),
-                new Conteudo(" Elementos linguísticos e extralinguísticos")
+        materiaisPortugues.add(new Material("Interpretação de Textos", new ArrayList<>(Arrays.asList(
+                new Conteudo("Compreensão e Inferência", new ArrayList<>(),
+                        new Explicacao("Compreensão e Inferência", "C:\\Users\\cardo\\Desktop\\materiais\\portugues\\adequacao ao contexto.txt")),
+                new Conteudo("Intenção Comunicativa", new ArrayList<>(),
+                        new Explicacao("Intenção Comunicativa", "C:\\Users\\cardo\\Desktop\\materiais\\portugues\\intencao comunicativa.txt")),
+                new Conteudo("Análise de Discurso", new ArrayList<>(),
+                        new Explicacao("Análise de Discurso", "C:\\Users\\cardo\\Desktop\\materiais\\portugues\\analise de discurso.txt")),
+                new Conteudo("Elementos Linguísticos e Extralinguísticos", new ArrayList<>(),
+                        new Explicacao("Elementos Linguísticos e Extralinguísticos", "C:\\Users\\cardo\\Desktop\\materiais\\portugues\\elementos linguisticos e extralinguisticos.txt"))
         ))));
-        materiaisPortugues.add(new Material(" Gêneros textuais", new ArrayList<>(Arrays.asList(
-                new Conteudo(" Artigo de opinião"),
-                new Conteudo(" Charge"),
-                new Conteudo(" Tira"),
-                new Conteudo(" Propaganda"),
-                new Conteudo(" Poema"),
-                new Conteudo(" Notícia"),
-                new Conteudo(" Crônica"),
-                new Conteudo(" Resenha")
+
+        materiaisPortugues.add(new Material("Gêneros Textuais", new ArrayList<>(Arrays.asList(
+                new Conteudo("Artigo de Opinião", new ArrayList<>(),
+                        new Explicacao("Artigo de Opinião", "C:\\Users\\cardo\\Desktop\\materiais\\portugues\\artigo de opiniao.txt")),
+                new Conteudo("Charge", new ArrayList<>(),
+                        new Explicacao("Charge", "C:\\Users\\cardo\\Desktop\\materiais\\portugues\\charge.txt")),
+                new Conteudo("Tira", new ArrayList<>(),
+                        new Explicacao("Tira", "C:\\Users\\cardo\\Desktop\\materiais\\portugues\\tira.txt")),
+                new Conteudo("Propaganda", new ArrayList<>(),
+                        new Explicacao("Propaganda", "C:\\Users\\cardo\\Desktop\\materiais\\portugues\\propaganda.txt")),
+                new Conteudo("Poema", new ArrayList<>(),
+                        new Explicacao("Poema", "C:\\Users\\cardo\\Desktop\\materiais\\portugues\\poema.txt")),
+                new Conteudo("Notícia", new ArrayList<>(),
+                        new Explicacao("Notícia", "C:\\Users\\cardo\\Desktop\\materiais\\portugues\\noticia.txt")),
+                new Conteudo("Crônica", new ArrayList<>(),
+                        new Explicacao("Crônica", "C:\\Users\\cardo\\Desktop\\materiais\\portugues\\cronica.txt")),
+                new Conteudo("Resenha", new ArrayList<>(),
+                        new Explicacao("Resenha", "C:\\Users\\cardo\\Desktop\\materiais\\portugues\\resenha.txt"))
         ))));
-        materiaisPortugues.add(new Material(" Norma culta vs. linguagem coloquial", new ArrayList<>(Arrays.asList(
-                new Conteudo(" Diferenças estruturais"),
-                new Conteudo(" Adequação ao contexto"),
-                new Conteudo(" Variedades linguísticas")
+
+        materiaisPortugues.add(new Material("Norma Culta vs. Linguagem Coloquial", new ArrayList<>(Arrays.asList(
+                new Conteudo("Diferenças Estruturais", new ArrayList<>(),
+                        new Explicacao("Diferenças Estruturais", "C:\\Users\\cardo\\Desktop\\materiais\\portugues\\adequacao ao contexto.txt")),
+                new Conteudo("Adequação ao Contexto", new ArrayList<>(),
+                        new Explicacao("Adequação ao Contexto", "C:\\Users\\cardo\\Desktop\\materiais\\portugues\\adequacao ao contexto.txt")),
+                new Conteudo("Variedades Linguísticas", new ArrayList<>(),
+                        new Explicacao("Variedades Linguísticas", "C:\\Users\\cardo\\Desktop\\materiais\\portugues\\variedades linguisticas.txt"))
         ))));
-        materiaisPortugues.add(new Material(" Gramática ", new ArrayList<>(Arrays.asList(
-                new Conteudo(" Ortografia"),
-                new Conteudo(" Pontuação"),
-                new Conteudo(" Crase"),
-                new Conteudo(" Concordância verbal e nominal"),
-                new Conteudo(" Regência verbal e nominal"),
-                new Conteudo(" Colocação pronominal"),
-                new Conteudo(" Pronomes, verbos, substantivos, adjetivos, advérbios")
+
+        materiaisPortugues.add(new Material("Gramática", new ArrayList<>(Arrays.asList(
+                new Conteudo("Ortografia", new ArrayList<>(),
+                        new Explicacao("Ortografia", "C:\\Users\\cardo\\Desktop\\materiais\\portugues\\ortografia.txt")),
+                new Conteudo("Pontuação", new ArrayList<>(),
+                        new Explicacao("Pontuação", "C:\\Users\\cardo\\Desktop\\materiais\\portugues\\pontuacao.txt")),
+                new Conteudo("Crase", new ArrayList<>(),
+                        new Explicacao("Crase", "C:\\Users\\cardo\\Desktop\\materiais\\portugues\\crase.txt")),
+                new Conteudo("Concordância Verbal e Nominal", new ArrayList<>(),
+                        new Explicacao("Concordância Verbal e Nominal", "C:\\Users\\cardo\\Desktop\\materiais\\portugues\\concordancia verbal e nominal.txt")),
+                new Conteudo("Regência Verbal e Nominal", new ArrayList<>(),
+                        new Explicacao("Regência Verbal e Nominal", "C:\\Users\\cardo\\Desktop\\materiais\\portugues\\regencia verbal e nominal.txt")),
+                new Conteudo("Colocação Pronominal", new ArrayList<>(),
+                        new Explicacao("Colocação Pronominal", "C:\\Users\\cardo\\Desktop\\materiais\\portugues\\colocacao pronominal.txt")),
+                new Conteudo("Pronomes, Verbos, Substantivos, Adjetivos, Advérbios", new ArrayList<>(),
+                        new Explicacao("Pronomes, Verbos, Substantivos, Adjetivos, Advérbios", "C:\\Users\\cardo\\Desktop\\materiais\\portugues\\pronomes verbos substantivos adjetivos adverbios.txt"))
         ))));
+
+
 
         // Redação ==================================
 
@@ -224,6 +253,21 @@ public class Main {
         for (Conteudo conteudo : materialSelecionado.getConteudo()) {
             System.out.println(k + " - " + conteudo.getNome());
             k++;
+        }
+
+        // Explicação
+        System.out.print("\nDigite o número do conteúdo para ver a explicação: ");
+        Scanner scanner = new Scanner(System.in);
+        int opcaoConteudo = scanner.nextInt();
+        Limpador.limpador();
+
+        Conteudo conteudoSelecionado = materialSelecionado.getConteudo().get(opcaoConteudo - 1);
+        System.out.println("======= EXPLICAÇÃO DE " + conteudoSelecionado.getNome().toUpperCase() + " =======\n");
+
+        if (conteudoSelecionado.getExplicacao() != null) {
+            conteudoSelecionado.getExplicacao().abrirArquivo(); // Agora abre o arquivo
+        } else {
+            System.out.println("Nenhuma explicação disponível para este conteúdo.");
         }
     }
 }
