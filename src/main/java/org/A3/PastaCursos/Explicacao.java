@@ -1,7 +1,9 @@
 package org.A3.PastaCursos;
 
-import java.awt.*;
-import java.io.*;
+import java.awt.Desktop;
+import java.io.File;
+import java.io.IOException;
+import java.util.List;
 
 public class Explicacao {
     private String nome;
